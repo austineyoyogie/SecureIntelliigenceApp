@@ -1,0 +1,697 @@
+<footer id="siteFooter" class="navLeftFooter site-footer__navigation masthead  clearfix" role="presentation" aria-label="navigation">
+  <a href="#" id="navigationBackToTop" aria-label="Back to Top">
+    <div class="navigation-back__toTop">
+      <div class="page-responsive-container">
+      <span class="back-toTop__text">Back to top</span>
+      </div>
+    </div>
+  </a>
+  <div class="page-responsive-container">
+    <div class="top-footer-vertical__accessibility" role="presentation">
+    <div class="top-footer-navigation__columns">
+      <div class="navigation-column-menu__links" style="">
+        <h4>Get to Know Us</h4>
+        <ul class="footer-content-menu__list">
+          <li class="menu-list__item"><a [routerLink]="['/']">Accessibility</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Sustainability</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Investor Relations</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Become an Affiliate</a></li>
+        </ul>
+      </div>
+      <div class="navigation-column-menu__links" style="">
+        <h4>Business Market Place</h4>
+        <ul class="footer-content-menu__list">
+          <li class="menu-list__item"><a [routerLink]="['/']">Self-Publish with Us</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">SetUp Marketplace</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Currency Converter</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">More Ways to make Money</a></li>
+        </ul>
+      </div>
+      <div class="navigation-column-menu__links" style="">
+        <h4>Accessibility & Investors</h4>
+        <ul class="footer-content-menu__list">
+          <li class="menu-list__item"><a [routerLink]="['/']">Accessibility</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Sustainability</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Investor Relations</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Become an Affiliate</a></li>
+        </ul>
+      </div>
+      <div class="navigation-column-menu__links" style="">
+        <h4>Make Money with Us</h4>
+        <ul class="footer-content-menu__list">
+          <li class="menu-list__item"><a [routerLink]="['/']">Self-Publish with Us</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">SetUp Marketplace</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Currency Converter</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">More Ways to make Money</a></li>
+        </ul>
+      </div>
+
+      <div class="navigation-column-menu__links" style="">
+        <h4>Make Money with Us</h4>
+        <ul class="footer-content-menu__list">
+          <li class="menu-list__item"><a [routerLink]="['/']">Self-Publish with Us</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">SetUp Marketplace</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Currency Converter</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">More Ways to make Money</a></li>
+        </ul>
+      </div>
+
+      <div class="navigation-column-menu__links" style="">
+        <h4>Make Money with Us</h4>
+        <ul class="footer-content-menu__list">
+          <li class="menu-list__item"><a [routerLink]="['/']">Self-Publish with Us</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">SetUp Marketplace</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">Currency Converter</a></li>
+          <li class="menu-list__item"><a [routerLink]="['/']">More Ways to make Money</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!--  <div class="footer-class" style="border-top: 0.5px solid white;"></div>-->
+  <div class="nav-footer-line footer-line__link navFooterPadItemLine" style="">
+    <div class="nav-footer-line footer-logo__line" style="background: #2691d9; bottom: 40px;">
+      <div class="page-responsive-container">
+      <a aria-label="Angular" href="#">
+        <div class="nav-logo-base nav-sprite" style="color: #e9f4fb; font-size: 14px;">&#169; Make Your Money</div>
+      </a>
+    </div>
+    </div>
+  </div>
+  <!-- Bottom Footer -->
+  <div id="siteFooterAccessible" class="site-footer_accessibility" style="">
+  <div class="page-responsive-container">
+    <div class="footer-vertical__accessibility" role="presentation">
+      <div class="accessible-footer-navigation__columns">
+        <div class="navigation-column-menu__links">
+          <h4>Get to Know Us</h4>
+          <ul class="footer-content-menu__list">
+            <li class="menu-list__item"><a [routerLink]="['/']">Accessibility</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">Sustainability</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">Investor Relations</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">Become an Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="navigation-column-menu__links" style="">
+          <h4>Business Market Place</h4>
+          <ul class="footer-content-menu__list">
+            <li class="menu-list__item"><a [routerLink]="['/']">Self-Publish with Us</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">SetUp Marketplace</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">Currency Converter</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">More Ways to make Money</a></li>
+          </ul>
+        </div>
+        <div class="navigation-column-menu__links" style="">
+          <h4>Accessibility & Investors</h4>
+          <ul class="footer-content-menu__list">
+            <li class="menu-list__item"><a [routerLink]="['/']">Accessibility</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">Sustainability</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">Investor Relations</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">Become an Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="navigation-column-menu__links" style="">
+          <h4>Make Money with Us</h4>
+          <ul class="footer-content-menu__list">
+            <li class="menu-list__item"><a [routerLink]="['/']">Self-Publish with Us</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">SetUp Marketplace</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">Currency Converter</a></li>
+            <li class="menu-list__item"><a [routerLink]="['/']">More Ways to make Money</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <!-- End Bottom Footer -->
+    <div id="policyFooterLine" class="footer-link__line">
+      <div class="page-responsive-container">
+        <ul class="content-link-lists">
+          <li class="link-first"><a href="#" id class="nav_a">Terms and Privacy Policy</a></li>
+          <li class="link-first"><a href="#" id class="nav_a">Your Privacy Choices</a></li>
+          <li class="link-first"><a href="#" id class="nav_a">CA Privacy Notice</a></li>
+          <li class="link-first"><a href="#" id class="nav_a">Advertise About Our Adds</a></li>
+          <li class="link-first"><a href="#" id class="nav_a">Careers</a></li>
+          <li class="link-first"><a href="#" id class="nav_a">Help</a></li>
+          <li class="link-first"><a href="#" id class="nav_a">Feedback</a></li>
+        </ul>
+        <span class="copy-right"> &#169; 2025 All right reserved.</span>
+      </div>
+    </div>
+</footer>
+
+=================================
+=================================
+=================================
+
+/* Footer */
+#siteFooter .page-responsive-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+#siteFooter {
+  margin-top: 0;
+  background-color: #f5f7f6;
+  font-size: 12px;
+  color: rgba(0,0,0, 0.56);
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#siteFooter {
+  margin: 20px 0 20px 0;
+  /*padding: 0 0 7px 0;*/
+}
+.site-footer__navigation {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  /*background-color: #232F3E;*/
+  background-color: #f5f5f7;
+  width: 100%;
+  position: relative;
+}
+.site-footer__navigation .navigation-back__toTop {
+  /*background-color: #3e233a;*/
+  margin-bottom: 25px;
+}
+.site-footer__navigation .navigation-back__toTop span {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  line-height: 19px;
+  font-size: 13px;
+}
+.navigation-back__toTop .back-toTop__text {
+  color: blue;
+}
+.site-footer__navigation a:link {
+  font-family: inherit;
+  text-decoration: none;
+}
+a, a:link {
+  text-decoration: none;
+}
+.site-footer__navigation a.nav_a:link, .site-footer__navigation a.nav_a:visited {
+  color: #DDD;
+}
+.site-footer__navigation .nav_last {
+  color: #999;
+}
+.site-footer__navigation .nav-Footer-Line {
+  border-top: 1px solid #3A4553;
+  margin-top: 40px;
+}
+.site-footer__navigation .nav-logo-base {
+  background-position: -10px -90px;
+  width: 176px;
+  height: 28px;
+  margin: 0 auto;
+  padding: 5px;
+}
+.site-footer__navigation .top-footer-navigation__columns {
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.top-footer-navigation__columns:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-footer-navigation__columns .navigation-column-menu__links {
+  padding: 8px;
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+}
+.top-footer-navigation__columns .footer-content-menu__list li {
+  list-style: none;
+}
+.top-footer-navigation__columns .footer-content-menu__list .menu-list__item {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* ======= MEDIA DEVICE MOBILE ======= */
+@media print, screen and (min-width: 325px) {
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    width: 100%;
+  }
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    margin-top: 20px;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+@media print, screen and (min-width: 475px) {
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    width: 100%;
+  }
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    margin-top: 20px;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+@media print, screen and (min-width: 640px) {
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    width: 100%;
+  }
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    margin-top: 20px;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+@media print, screen and (min-width: 768px) {
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    width: 50%;
+  }
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    margin-top: 20px;
+  }
+  .column {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+@media print, screen and (min-width: 992px) {
+  #PageWrapper .page-responsive-container {
+    max-width: 992px;
+  }
+  #siteFooter .page-responsive-container {
+    max-width: 992px;
+  }
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    width: 16.6666667%;
+  }
+  .column {
+    width: 50%;
+  }
+}
+
+@media print, screen and (min-width: 1200px) {
+  #PageWrapper .page-responsive-container {
+    max-width: 1200px;
+  }
+  #siteFooter .page-responsive-container {
+    max-width: 1200px;
+  }
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    width: 16.6666667%;
+  }
+  .column {
+    width: 50%;
+  }
+}
+
+@media print, screen and (min-width: 1280px) {
+  #PageWrapper .page-responsive-container {
+    max-width: 1280px;
+  }
+  #siteFooter .page-responsive-container {
+    max-width: 1280px;
+  }
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    width: 16.6666667%;;
+  }
+}
+
+@media print, screen and (min-width: 1376px) {
+  #PageWrapper .page-responsive-container {
+    max-width: calc(1376px);
+  }
+  #siteFooter .page-responsive-container {
+    max-width: 1376px;
+  }
+  .top-footer-navigation__columns {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    width: 16.6666667%;
+  }
+  .column {
+    width: 50%;
+  }
+}
+
+/*
+@media (min-width: 1280px) {
+  .xl\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:max-w-\[1376px\] {
+    max-width: 1376px;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:max-w-\[1000px\] {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 768px) {
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .md\:max-w-\[760px\] {
+    max-width: 760px;
+  }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/* Amazon Footer */
+/*
+#navFooter {
+  margin-top: 0;
+}
+#navFooter {
+  margin: 30px 0 8px 0;
+  padding: 0 0 7px 0;
+}
+#navFooter.navLeftFooter {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  /*background-color: #232F3E;*
+  background-color: #EEE;
+  width: 100%;
+  position: relative;
+}
+#navFooter.navLeftFooter .navFooterBackToTop {
+  margin-bottom: 40px;
+  /*background-color: #37475A;
+  background-color: #EEE;
+}
+*/
+
+/*
+#navFooter .navFooterBackToTop {
+  background-color: #f3f3f3;
+  margin-bottom: 25px;
+}
+#navFooter.navLeftFooter .navFooterBackToTop .navFooterBackToTopText {
+  color: #FFF;
+}
+#navFooter .navFooterBackToTop span {
+  display: block;
+  text-align: center;
+  color: #111;
+  padding: 15px 0;
+  line-height: 19px;
+  font-size: 13px;
+}
+#navFooter a:link {
+  font-family: inherit;
+  color: #004B91;
+  text-decoration: none;
+}
+a, a:link {
+  text-decoration: none;
+  color: #007185;
+}
+#navFooter.navLeftFooter a.nav_a:link, #navFooter.navLeftFooter a.nav_a:visited {
+  color: #DDD;
+}
+#navFooter.navLeftFooter .nav_last {
+  color: #999;
+}
+#navFooter.navLeftFooter .nav-Footer-Line {
+  border-top: 1px solid #3A4553;
+  margin-top: 40px;
+}
+#navFooter.navLeftFooter div.navFooterLine {
+  font-size: 12px;
+}
+#navFooter.navLeftFooter .navFooterLinkLine {
+  margin: 10px auto;
+}
+#navFooter.navLeftFooter .navFooterPadItemLine {
+  text-align: center;
+  max-height: 1000px;
+  margin: 30px auto 15px;
+}
+#navFooter.navLeftFooter .navFooterLogoLine {
+  text-align: center;
+  max-height: 1000px;
+  margin: 30px auto 15px;
+}
+div.navFooterLogoLine {
+  margin: 30px 8px 4px 8px;
+  font-size: 1px;
+  line-height: 0;
+}
+div.navFooterLine {
+  font-family: inherit;
+  color: #DDD;
+  font-size: 11px;
+  text-align: center;
+  line-height: 18px;
+  white-space: nowrap;
+}
+.navFooterLinkLine {
+  margin: 0 8px 0 8px;
+}
+#navFooter a, #navFooter span {
+  font-family: inherit;
+  white-space: nowrap;
+}
+*/
+/*.navFooterPadItemLine a, .navFooterPadItemLine span {*/
+/*  padding: 0 0.6em;*/
+/*}*/
+/*
+.navFooterLinkLine span {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#navFooter .nav-logo-base {
+  background-position: -10px -90px;
+  width: 76px;
+  height: 23px;
+  margin: 0 auto;
+}
+.nav-sprite-v1 .nav-sprite {
+  background-image: url("#");
+  background-position: 0 1000px;
+  background-repeat: repeat-x;
+}
+.icp-container-desktop * {
+  box-sizing: border-box;
+}
+#navFooter.navLeftFooter .navFooterDescLine {
+  background-color: #131A22;
+  padding: 30px 0;
+  margin: 30px 0 0;
+}
+.navFooterDescLine {
+  margin: 20px 0 14px 0;
+}
+#navFooter.navLeftFooter .navFooterDescLine .navFooterMoreOnA {
+  width: 33.333%;
+  margin: 0 auto;
+}
+
+#navFooter .navFooterDescItem {
+  font-size: 12px !important;
+  padding: 0 .75em;
+  vertical-align: top;
+  text-align: left;
+  line-height: 120%;
+}
+.navFooterDescText {
+  font-size: 12px;
+  color: #767676;
+  line-height: 110%;
+  display: block;
+  margin-bottom: 1px;
+}
+
+#navFooter td {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 120%;
+  padding: 0 10px;
+}
+#navFooter.navLeftFooter .navFooterCopyright {
+  background-color: #131A22;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 30px;
+}
+.navFooterLinkLine ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul {
+  margin: 0 0 0 18px;
+  color: #FFF;
+}
+#navFooter.navLeftFooter .nav_last {
+  color: #999;
+}
+.navFooterLinkLine ul li:last-child {
+  color: #333;
+}
+.navFooterLinkLine ul li {
+  display: inline;
+}
+#navFooter #nav-icon-ccba {
+  background-position: -135px -138px;
+  width: 29px;
+  height: 14px;
+  position: relative;
+  top: 2.25px;
+}
+.navFooterLinkLine span {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#navFooter .NavFooterTopColumn {
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.NavFooterTopColumn:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.TopColumnLinks {
+  padding: 8px;
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+}
+.Footer-menuList li {
+  list-style: none;
+}
+*/
+/* End Amazon Footer */
+/* ======= MEDIA DEVICE MOBILE ======= */
+/*
+@media (min-width: 475px) {
+  #navHeader.global-header-navigation {
+    background-image: none;
+    background-color: #81b655;
+  }
+  #navFooter .ResponseFooterContainer {
+    max-width: 475px;
+    background-color: red;
+  }
+  .TopColumnLinks {
+    width: 100%;
+  }
+}
+@media (min-width: 640px) {
+  #navHeader.global-header-navigation {
+    background-image: none;
+    background-color: #81b655;
+  }
+  #navFooter .ResponseFooterContainer {
+    max-width: 640px;
+    background-color: red;
+  }
+  .TopColumnLinks {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+
+  #navHeader.global-header-navigation {
+    background-image: none;
+    background-color: #3220d7;
+  }
+  #navFooter .ResponseFooterContainer {
+   max-width: 768px;
+    background-color: yellow;
+  }
+  .TopColumnLinks {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  #navHeader.global-header-navigation {
+    background-image: none;
+    background-color: #f15b66;
+  }
+  #navFooter .ResponseFooterContainer {
+    max-width: 1024px;
+    background-color: pink;
+  }
+  .TopColumnLinks {
+    width: 25%;
+  }
+}
+@media (min-width: 1280px) {
+  #navHeader.global-header-navigation {
+    background-image: none;
+    background-color: #3e233a;
+  }
+  #navFooter .ResponseFooterContainer {
+    max-width: 1280px;
+    background-color: palegreen;
+  }
+  #navFooter .ResponseFooterContainer .Footer-Container {
+    max-width: 1280px;
+  }
+  .TopColumnLinks {
+    width: 25%;
+  }
+}
+@media (min-width: 1536px) {
+  #navHeader.global-header-navigation {
+    background-image: none;
+    background-color: #243e23;
+  }
+  #navFooter .ResponseFooterContainer {
+    max-width: 1536px;
+    background-color: blue;
+  }
+  .NavFooterTopColumn {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .TopColumnLinks {
+    width: 25%;
+  }
+}
+*/

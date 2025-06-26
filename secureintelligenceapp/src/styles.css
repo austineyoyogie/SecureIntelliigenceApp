@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/*  https://login.twilio.com/u/signup?state=hKFo2SAyRjc5SVNPVjhKaER4eHJtbHNCX21iQ216VzdrX2VQYqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGVlekMydXB2LW5sN0dYd0FJa2JWOEI2dHMtd2xwVm1vo2NpZNkgTW05M1lTTDVSclpmNzdobUlKZFI3QktZYjZPOXV1cks   */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css');
+/*@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');*/
+/*@import url('node_modules/angular-notifier/styles');*/
+@import "assets/css/_header.css";
+@import "assets/css/_mobile-navigation.css";
+@import "assets/css/main.css";
+@import "assets/css/_login.css";
+@import "assets/css/_register.css";
+@import "assets/css/_adminstrator.css";
+@import "assets/css/_footer.css";
+@import "assets/css/_footer-bottom.css";
+
+
+/*
+.ulp-field.c88a45da2 > label {
+  position: absolute;
+  left: 16px;
+  left: var(--spacing-2);
+  color: #6f7780;
+  color: var(--font-light-color);
+  background-color: #fff;
+  background-color: var(--input-background-color);
+  z-index: 1;
+  z-index: var(--z-index-base);
+  padding: 1px 6px;
+  top: 26px;
+  top: var(--input-label-top);
+  transform: translateY(-50%);
+  transform: var(--input-label-transform);
+  transition: transform .15s ease-in-out,top .15s ease-in-out,padding .15s ease-in-out;
+  transform-origin: 0;
+  max-width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+*/
