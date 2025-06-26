@@ -1,0 +1,247 @@
+<!--
+<div class="layout-container">
+  <div class="auth-widget-container">
+ -->
+
+<!--
+  <section *ngIf="(loginState$ | async) as state" [ngSwitch]="state.dataState" class="section-padding blog-cstm-body">
+    <div *ngIf="!state.loginSuccess && !state.isUsingMfa" class="">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 mt-4 mt-lg-0">
+          <div class="verticle-slider left-side-content resp-btn-blog-outer">
+            <div class="card rounded-0 border-0 mt-3">
+              <div class="card-body bg-white border">
+                <div class="blog-cstm-left">Hello left side</div>
+                <h2 class="h4 mb-2">Build Web Agile Team</h2>
+                <p class="mb-3 text-graylight">Hire Skilled Developer From Us</p>
+                <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)" class="inquiry-form-block tech-form agile-form" data-success="Thanks for your enquiry, we'll be in touch soon" data-error="Please fill all required fields" novalidate="novalidate">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input type="text" id="email" name="email" #email="ngModel" ngModel placeholder="Email Address" appValidators required minlength="1" maxlength="250" class="form-control validate-required bg-white" [class.is-invalid]="email.invalid && (email.dirty || email.touched)">
+                      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="invalid-feedback">
+                        <div *ngIf="email.errors?.['required']">This field is required.</div>
+                        <div *ngIf="email.errors?.['minlength']">This field must have at least 8 character.</div>
+                        <div *ngIf="email.errors?.['maxlength']">This field must have at most 250 characters.</div>
+                        <div *ngIf="!email.errors?.['required'] && !email.errors?.['minlength'] && !email.errors?.['maxlength'] && email.errors?.['Validator']">
+                          Invalid email character format.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mb-3 text-graylight"></p>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <input type="text" id="password" name="password" #password="ngModel" ngModel placeholder="Password" required minlength="8" maxlength="250" class="form-control validate-required bg-white" [class.is-invalid]="password.invalid && (password.dirty || password.touched)">
+                        <div *ngIf="password.invalid && (email.dirty || password.touched)" class="invalid-feedback">
+                          <div *ngIf="password.errors?.['required']">This field is required.</div>
+                          <div *ngIf="password.errors?.['minlength']">This field must have at least 8 character.</div>
+                          <div *ngIf="password.errors?.['maxlength']">This field must have at most 250 characters.</div>
+                          <div *ngIf="!password.errors?.['required'] && !password.errors?.['minlength'] && !password.errors?.['maxlength'] && password.errors?.['Validator']">
+                            Invalid password character format.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label style="padding-bottom: 0px;"><input  type="checkbox" checked="checked" name="remember"> Remember me</label>
+                      </div>
+                    </div>
+                    <div class="justify-content-center col-4 mb-4">
+                      <button [disabled]="state.dataState === DataState.LOADING || loginForm.invalid || loginForm.pristine" type="submit" class="btn btn-primary text-top ls-xs w-100" style="padding: 12px;">
+                        <span *ngIf="state.dataState === DataState.LOADING" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="margin-right: 5px;"></span>
+                        <span *ngIf="state.dataState === DataState.LOADING">Loading...</span>
+                        <span *ngIf="!(state.dataState === DataState.LOADING)">Sign In</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="verticle-slider left-side-content resp-btn-blog-outer">
+        <div class="col-lg-6">
+          <div style="margin: 5px">
+            <div *ngIf="state.isUsingMfa">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <h2><i style="margin-right: 5px;" class="bi bi-safe"></i>GC SP</h2>
+              <h5 class="card-title mt-4 mb-4">Verification Code Sent To ...{{ state.telephone }}</h5>
+              <div class="pws" style="margin-left: 25%;">
+                <i class="bi bi-check-circle-fill" style="font-size: 30px;color: green;"></i>
+              </div>
+              <p class="mt-2" style="font-size: 20px;">Please access your SMS and enter the code.</p>
+              <div *ngIf="state.dataState === DataState.ERROR" class="alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
+                {{ state.error }}
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <p class="error" style="height: 30px;"></p>
+              <form #verifyCodeForm="ngForm" (ngSubmit)="verifyCode(verifyCodeForm)" class="inquiry-form-block tech-form agile-form">
+                <div class="col-lg-8">
+                  <div class="form-outline mb-4">
+                    <input [disabled]="state.dataState === DataState.LOADING" type="text" id="code" name="code" #code="ngModel" ngModel required minlength="8" placeholder=" __   __   __   __   __   __   __   __" class="form-control validate-required bg-white" [class.is-invalid]="code.invalid && (code.dirty || code.touched)" >
+                    <div *ngIf="code.invalid && (code.dirty || code.touched)" class="invalid-feedback">
+                      <div *ngIf="code.errors?.['required']">This field is required.</div>
+                      <div *ngIf="code.errors?.['minlength']">This field must have at least 8 numeric.</div>
+                    </div>
+                  </div>
+                  <div class="justify-content-center mb-4">
+                    <button [disabled]="state.dataState === DataState.LOADING || verifyCodeForm.invalid || verifyCodeForm.pristine" type="submit" class="btn btn-primary">
+                      <span *ngIf="state.dataState === DataState.LOADING" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="margin-right: 5px;"></span>
+                      <span *ngIf="state.dataState === DataState.LOADING">Loading...</span>
+                      <span *ngIf="!(state.dataState === DataState.LOADING)">Verify Code</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                  <a (click)="loginPage()" style="color: #0D6EFD; text-decoration: underline; cursor: pointer;">Account Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->
+
+  <!--
+  </div>
+  <div class="auth-market-container">
+    <h1>Auth Market Container</h1>
+  </div>
+</div>
+-->
+
+<!-- ========== ============= =========== -->
+<!-- ========== Register Form =========== -->
+
+<section *ngIf="(registerState$ | async) as state" [ngSwitch]="state.dataState">
+  <div *ngIf="!state.registerSuccess" class="container">
+    <div class="row justify-content-center my-5">
+      <div class="col-md-6" style="margin-top: 50px;">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              <h2><i style="margin-right: 5px;" class="bi bi-safe"></i>Secure Documents</h2>
+              <h5 class="card-title mt-4 mb-5">Create an Account</h5>
+            </div>
+            <div *ngIf="state.dataState === DataState.ERROR" class="alert alert-danger bg-danger text-light border-0 alert-dismissible fade show" role="alert">
+              {{ state.error }}
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+              <div class="form-outline mb-4">
+                <label class="form-label" for="firstName">First Name</label>
+                <input type="text" [disabled]="state.dataState === DataState.LOADING" id="firstName" name="firstName" #firstName="ngModel" ngModel placeholder="First Name" required minlength="2" maxlength="25" class="form-control validate-required bg-white" [class.is-invalid]="firstName.invalid && (firstName.dirty || firstName.touched)">
+                <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" class="invalid-feedback">
+                  <div *ngIf="firstName.errors?.['required']">This field is required.</div>
+                  <div *ngIf="firstName.errors?.['minlength']">This field must have at least 2 character.</div>
+                  <div *ngIf="firstName.errors?.['maxlength']">This field must have at most 25 characters.</div>
+                  <div *ngIf="!firstName.errors?.['required'] && !firstName.errors?.['minlength'] && !firstName.errors?.['maxlength'] && firstName.errors?.['Validator']">
+                    Invalid field character format.
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" [disabled]="state.dataState === DataState.LOADING" id="lastName" name="lastName" #lastName="ngModel" ngModel placeholder="Last Name" required minlength="2" maxlength="25" class="form-control validate-required bg-white" [class.is-invalid]="lastName.invalid && (lastName.dirty || lastName.touched)">
+                <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)" class="invalid-feedback">
+                  <div *ngIf="lastName.errors?.['required']">This field is required.</div>
+                  <div *ngIf="lastName.errors?.['minlength']">This field must have at least 2 character.</div>
+                  <div *ngIf="lastName.errors?.['maxlength']">This field must have at most 25 characters.</div>
+                  <div *ngIf="!lastName.errors?.['required'] && !lastName.errors?.['minlength'] && !lastName.errors?.['maxlength'] && lastName.errors?.['Validator']">
+                    Invalid field character format.
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="text" [disabled]="state.dataState === DataState.LOADING" id="email" name="email" #email="ngModel" ngModel placeholder="Email Address" appValidators required minlength="2" maxlength="250" class="form-control validate-required bg-white" [class.is-invalid]="email.invalid && (email.dirty || email.touched)">
+                <div *ngIf="email.invalid && (email.dirty || email.touched)" class="invalid-feedback">
+                  <div *ngIf="email.errors?.['required']">This field is required.</div>
+                  <div *ngIf="email.errors?.['minlength']">This field must have at least 2 character.</div>
+                  <div *ngIf="email.errors?.['maxlength']">This field must have at most 250 characters.</div>
+                  <div *ngIf="!email.errors?.['required'] && !email.errors?.['minlength'] && !email.errors?.['maxlength'] && email.errors?.['Validator']">
+                    Invalid email character format.
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label for="password" class="form-label">Password</label>
+                <input type="text" [disabled]="state.dataState === DataState.LOADING" id="password" name="password" #password="ngModel" ngModel placeholder="Password" required minlength="8" maxlength="250" class="form-control validate-required bg-white" [class.is-invalid]="password.invalid && (password.dirty || password.touched)">
+                <div *ngIf="password.invalid && (email.dirty || password.touched)" class="invalid-feedback">
+                  <div *ngIf="password.errors?.['required']">This field is required.</div>
+                  <div *ngIf="password.errors?.['minlength']">This field must have at least 8 character.</div>
+                  <div *ngIf="password.errors?.['maxlength']">This field must have at most 250 characters.</div>
+                  <div *ngIf="!password.errors?.['required'] && !password.errors?.['minlength'] && !password.errors?.['maxlength'] && password.errors?.['Validator']">
+                    Invalid password character format.
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mb-4">
+                <button [disabled]="state.dataState === DataState.LOADING || registerForm.invalid || registerForm.pristine" type="submit" class="btn btn-primary">
+                  <span *ngIf="state.dataState === DataState.LOADING" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="margin-right: 5px;"></span>
+                  <span *ngIf="state.dataState === DataState.LOADING">Saving...</span>
+                  <span *ngIf="!(state.dataState === DataState.LOADING)">Create Account</span>
+                </button>
+              </div>
+            </form>
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <a [ngStyle]="{'pointer-events' : state.dataState === DataState.LOADING ? 'none' : 'auto'}" [routerLink]="['/login']">Account Login</a>
+              </div>
+              <div class="col">
+                <a [ngStyle]="{'pointer-events' : state.dataState === DataState.LOADING ? 'none' : 'auto'}" [routerLink]="['/resetpassword']">Forgot password?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success screen -->
+  <div *ngIf="state.registerSuccess" class="container">
+    <div class="row justify-content-center my-5">
+      <div class="col-md-6" style="margin-top: 50px;">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              <h2><i style="margin-right: 5px;" class="bi bi-safe"></i>SecureCapita</h2>
+              <h5 class="card-title mt-4 mb-4">{{ state.message }}</h5>
+              <i class="bi bi-check-circle-fill" style="font-size: 80px;color: green;"></i>
+              <p class="mt-2" style="font-size: 20px;">Please access your email and confirm your account.</p>
+            </div>
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <a [routerLink]="['/login']">Account Login</a>
+              </div>
+              <div class="col">
+                <a (click)="createAccountForm()" style="color: #0D6EFD; text-decoration: underline; cursor: pointer;">
+                  Create another account
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+

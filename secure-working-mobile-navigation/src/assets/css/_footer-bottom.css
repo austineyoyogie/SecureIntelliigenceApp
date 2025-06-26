@@ -1,0 +1,186 @@
+/* ===== Footer Bottom 2 ===== */
+/*
+.footer-logo__line {
+  margin: 20px 0 20px 0;
+  font-size: 1px;
+  line-height: 20px;
+}
+.footer-line {
+  font-family: inherit;
+  color: #DDD;
+  font-size: 11px;
+  text-align: center;
+  line-height: 18px;
+  white-space: nowrap;
+}
+#siteFooterAccessible .page-responsive-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+#siteFooterAccessible {
+  margin-top: 0;
+  background-color: #f5f7f6;
+  font-size: 12px;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: rgba(0,0,0, 0.56);
+}
+#siteFooterAccessible {
+  margin: 20px 0 20px 0;
+  padding: 0 0 7px 0;
+}
+.site-footer_accessibility {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+  position: relative;
+}
+.site-footer_accessibility a:link {
+  font-family: inherit;
+  text-decoration: none;
+}
+a, a:link {
+  text-decoration: none;
+}
+.site-footer_accessibility .nav-footer-fine {
+  border-top: 1px solid #3A4553;
+  margin-top: 40px;
+}
+.site-footer_accessibility .accessible-footer-navigation__columns {
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.accessible-footer-navigation__columns .accessible-footer-navigation__columns:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.accessible-footer-navigation__columns .navigation-column-menu__links {
+  padding: 8px;
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+}
+.accessible-footer-navigation__columns .footer-content-menu__list li {
+  list-style: none;
+}
+.accessible-footer-navigation__columns .navigation-column-menu__links h4 {
+  font-size: 12px;
+  color: rgba(0,0,0, 0.56);
+}
+.accessible-footer-navigation__columns .footer-content-menu__list .menu-list__item {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.site-footer_accessibility .rooter-line {
+  font-size: 8px;
+}
+.footer-line__link {
+  margin: 0 8px 0 8px;
+}
+.footer-line__link ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.site-footer_accessibility .footer-line__link {
+  margin: 10px auto;
+}
+*/
+
+#policyFooterLine {
+  isolation: isolate;
+  position: relative;
+}
+.footer-link__line {
+  margin: 0 auto;
+  background-color: #232F3E;
+  padding: 20px 0 20px 0;
+
+}
+.footer-link__line .content-link-lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  list-style: none;
+  margin: 12px 0px 12px 0;
+  padding: 0;
+  justify-content: center;
+}
+.footer-link__line .link-first {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer-link__line .link-first a, .footer-link__line .link-first span {
+  margin: 0px;
+  color: rgb(252, 250, 251);
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 400;
+}
+/* ======= MEDIA DEVICE MOBILE ======= */
+@media print, screen and (max-width: 325px) {
+  .footer-link__line  {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+@media print, screen and (min-width: 475px) {
+  .footer-link__line .copyright {
+    width: 100%;
+  }
+
+  .top-footer-navigation__columns .navigation-column-menu__links {
+    margin-top: 20px;
+  }
+}
+
+@media print, screen and (min-width: 640px) {
+
+}
+
+@media print, screen and (min-width: 768px) {
+  #policyFooterLine .page-responsive-container {
+    max-width: 768px;
+  }
+  .footer-link__line .copyright {
+    width: 100%;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  #policyFooterLine .page-responsive-container {
+    max-width: 1024px;
+  }
+  .footer-link__line .copyright {
+    width: 100%;
+  }
+}
+
+@media print, screen and (min-width: 1280px) {
+  #policyFooterLine .page-responsive-container {
+    max-width: 1280px;
+  }
+  .footer-link__line .copyright {
+    width: 100%;
+  }
+}
+@media print, screen and (min-width: 1376px) {
+  #policyFooterLine .page-responsive-container {
+    max-width: 1376px;
+  }
+  .footer-link__line .copyright {
+    display: inline-flex;
+  }
+  .footer-link__line .copyright {
+    width: 50%;
+  }
+}

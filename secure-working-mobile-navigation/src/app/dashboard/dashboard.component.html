@@ -1,0 +1,38 @@
+<ng-container>
+
+<!-- <div id="PageWrapper"> -->
+  <div class="layout__StyleLayout">
+    <app-header></app-header>
+    <div class="page-responsive-container">
+      <br />
+      <br />
+      <br />
+
+<!--  <div id="myElement">Open Overlay</div>-->
+      <div #myElement id="overlaybtn" >Open Overlay </div>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive -->
+<!-- Try this link below for another flex column => Good -->
+<!-- https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 -->
+
+      <h2>Responsive Two Column Layout</h2>
+      <p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+
+      <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <h2>Column 1</h2>
+          <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+          <h2>Column 2</h2>
+          <p>Some text..</p>
+        </div>
+      </div>
+<!--      https://matthewjamestaylor.com/2-column-layouts-->
+    </div>
+    <app-footer></app-footer>
+  </div>
+</ng-container>
+
+<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_symbol-->
+

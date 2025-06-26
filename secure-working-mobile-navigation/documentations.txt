@@ -1,0 +1,35 @@
+
+https://freefrontend.com/css-forms/
+https://codepen.io/Metty/pen/NWpzexj
+https://formbold.com/templates
+
+
+
+// https://www.youtube.com/watch?v=EAPzqZpKQ-s
+// https://www.youtube.com/@AyyazTech
+// https://www.youtube.com/watch?v=KILVWqLQVrM
+// https://www.youtube.com/watch?v=FDIj5Vklnlc&list=PL7JmcZV0UQtUxsHS8dF3EINHdoIvRS6Ft
+
+// https://www.youtube.com/watch?v=cHcpenjrpXw
+// https://medium.com/@santosant/angular-functional-interceptors-3a2a2e71cdef
+
+
+// https://www.youtube.com/watch?v=EAPzqZpKQ-s
+// https://www.youtube.com/@AyyazTech
+// https://www.youtube.com/watch?v=KILVWqLQVrM
+// https://www.youtube.com/watch?v=FDIj5Vklnlc&list=PL7JmcZV0UQtUxsHS8dF3EINHdoIvRS6Ft
+
+
+
+
+
+<!--https://www.youtube.com/watch?v=liZSmSi3NMU-->
+<!--https://www.youtube.com/watch?v=PlpM2LJWu-s-->
+
+/*
+TypeScript, event handlers in the DOM, and the this keyword
+https://www.valentinog.com/blog/this/
+*/
+
+
+https://www.w3schools.com/howto/howto_js_collapsible.asp
