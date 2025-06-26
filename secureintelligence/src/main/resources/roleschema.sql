@@ -1,0 +1,20 @@
+USE secureintelligence;
+
+SELECT * FROM Users;
+
+SELECT * FROM roles;
+
+INSERT INTO roles (name, permissions)
+VALUES ('ROLE_USER', 'READ:USER,READ:CUSTOMER'),
+       ('ROLE_STAFF', 'READ:USER,READ:CUSTOMER,UPDATE:USER,UPDATE:CUSTOMER,READ:DOCUMENT,UPDATE:USER,UPDATE:DOCUMENT'),
+       ('ROLE_MEDIATOR', 'READ:USER,READ:CUSTOMER,UPDATE:USER,UPDATE:CUSTOMER,READ:DOCUMENT,UPDATE:USER,UPDATE:DOCUMENT'),
+       ('ROLE_MANAGER', 'READ:USER,READ:CUSTOMER,UPDATE:USER,UPDATE:CUSTOMER,READ:DOCUMENT,UPDATE:USER,UPDATE:DOCUMENT'),
+       ('ROLE_ADMIN', 'READ:USER,READ:CUSTOMER,CREATE:USER,CREATE:CUSTOMER,UPDATE:USER,UPDATE:CUSTOMER,READ:DOCUMENT,CREATE:USER,CREATE:DOCUMENT,UPDATE:USER,UPDATE:DOCUMENT'),
+       ('ROLE_SYSADMIN', 'READ:USER,READ:CUSTOMER,CREATE:USER,CREATE:CUSTOMER,UPDATE:USER,UPDATE:CUSTOMER,DELETE:USER,DELETE:CUSTOMER,READ:DOCUMENT,CREATE:USER,CREATE:DOCUMENT,UPDATE:USER,UPDATE:DOCUMENT,DELETE:USER,DELETE:DOCUMENT');
+
+-- '2025-03-07 20:10:47.725642-08', '2025-03-07 20:10:47.725642-08'
+
+-- public static final String USER_AUTHORITIES = "document:create,document:read,document:update,document:delete";
+-- public static final String ADMIN_AUTHORITIES = "user:create,user:read,user:update,document:create,document:read,document:update,document:delete";
+-- public static final String SUPER_ADMIN_AUTHORITIES = "user:create,user:read,user:update,user:delete,document:create,document:read,document:update,document:delete";
+-- public static final String MANAGER_AUTHORITIES = "document:create,document:read,document:update,document:delete";
