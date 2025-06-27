@@ -1,6 +1,6 @@
 #############################################
 ###                                      ####
-### Author: Austine I Owoh               ####
+### Author:               ####
 ### Version: 1.0                         ####
 ### License: CMS Q Platform LLC          ####
 ### Date: November 20th, 2023 Monday     ####
